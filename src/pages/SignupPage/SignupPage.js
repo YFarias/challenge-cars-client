@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import authService from "../../services/auth.service";
 
+import "./SignupPage.css"
 function SignupPage(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -38,10 +39,10 @@ function SignupPage(props) {
       <h1>Sign Up</h1>
 
       <form onSubmit={handleSignupSubmit}>
-        <label>Email:</label>
+        <label>Email</label>
         <input type="text" name="email" value={email} onChange={handleEmail} />
 
-        <label>Password:</label>
+        <label>Password</label>
         <input
           type="password"
           name="password"
@@ -49,7 +50,7 @@ function SignupPage(props) {
           onChange={handlePassword}
         />
 
-        <label>Name:</label>
+        <label>Name</label>
         <input type="text" name="name" value={name} onChange={handleName} />
 
         <button type="submit">Sign Up</button>

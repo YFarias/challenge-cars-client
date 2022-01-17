@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-class ExampleService {
+class CarService {
   constructor() {
     this.api = axios.create({
       baseURL: process.env.REACT_APP_SERVER_URL || "http://localhost:5005"
@@ -19,35 +19,30 @@ class ExampleService {
     });
   }
 
-  // POST /api/examples
+  //!Post
   createOne = async (requestBody) => {
-    return this.api.post('/api/examples', requestBody);
+    return this.api.post('/api/cars', requestBody);
   }
 
-  // GET /api/examples
+  //!Get
   getAll = async () => {
-    return this.api.get('/api/examples');
+    return this.api.get('/api/cars');
   }
 
-  // GET /api/examples/:id
-  getOne = async (id) => {
-    return this.api.get(`/api/examples/${id}`);
-  }
-
-  // PUT /api/examples/:id
+  //!PUT
   updateOne = async (id, requestBody) => {
-    return this.api.put(`/api/examples/${id}`, requestBody);
+    return this.api.put(`/api/cars/${id}`, requestBody);
   }
 
-  // DELETE /api/examples/:id
+  //!DELETE 
   deleteProject = async (id) => {
-    return this.api.delete(`/api/examples/${id}`);
+    return this.api.delete(`/api/cars/${id}`);
   } 
 
 
 }
 
 // Create one instance of the service
-const exampleService = new ExampleService();
+const carService = new CarService();
 
-export default exampleService;
+export default carService;

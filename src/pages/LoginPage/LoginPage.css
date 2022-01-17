@@ -1,0 +1,38 @@
+.LoginPage {
+    background-color: #ffffff;
+    border: 1px solid grey;
+    box-shadow: 0px 2px 3px grey;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+.LoginPage form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.LoginPage label {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.LoginPage button {
+   background-color: rgba(76, 2, 250, 0.938);
+   color: white;
+   border-radius: 5px;
+   padding: 20px 90px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+}
+
+.LoginPage button:hover{
+    background-color:rgb(78, 78, 78);
+}

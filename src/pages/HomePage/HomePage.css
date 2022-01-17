@@ -1,0 +1,32 @@
+.HomeContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2%;
+    margin: 4%;
+}
+
+
+
+
+.CardContainer {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.Card{
+    text-align:start;
+    background: linear-gradient(to bottom left, rgb(250, 220, 220) 1%, rgb(160, 255, 231) 100%);
+    box-shadow: 3px 3px 3px 1px rgb(68, 44, 44);
+    border-radius: 10%;
+    margin: 10px;
+    height: 200px;
+    width: 220px;
+    padding: 1.1%;
+
+}

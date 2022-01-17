@@ -1,0 +1,59 @@
+nav {
+    background:linear-gradient(to top right,  rgb(238, 238, 238) 1%, rgb(249, 255, 255) 100%);
+    color: white;
+    box-shadow: 2px 2px 2px gray;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+    
+}
+
+
+
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+.Menu {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items:center;
+    padding-right: 10px;
+
+}
+
+.Bug{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+}
+
+nav li {
+    list-style: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.btn button{
+ border-radius: 5px;
+
+}
+
+.btn-black button {
+    border-radius: 5px;
+    background:linear-gradient(to bottom left, black 1%, rgb(211, 209, 209) 100%) ;
+    color: white;
+}
+
+.profile h4{
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
