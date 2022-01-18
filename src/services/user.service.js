@@ -19,12 +19,12 @@ class UserService {
       });
     }
   
-    
+    //!Get
     userInf = async () => {
       return this.api.get('/api/users/current');
     }
   
-    
+    //!PUT
     editInf = async (requestBody) => {
       return this.api.put(`/api/users/current`, requestBody);
     }

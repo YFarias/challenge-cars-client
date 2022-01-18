@@ -1,4 +1,4 @@
-import axios from "axios";
+
 import React, { createContext, useState, useEffect } from "react";
 import authService from "../services/auth.service";
 
@@ -51,7 +51,7 @@ function AuthProviderWrapper({ children }) {
     verifyStoredToken();
   }, []);
 
-  /* Here we'll create function for updating the state variables */
+  /*function for updating the state variables */
 
   return (
     <AuthContext.Provider

@@ -11,9 +11,9 @@ function HomePage() {
 
     try {
       
-        const fetchData = await carService.getAll()
-        setCar(fetchData.data)
-        setBrandFilter(fetchData.data)
+      const fetchData = await carService.getAll()
+      setCar(fetchData.data)
+      setBrandFilter(fetchData.data)
 
     } catch (error) {
       console.log(error)

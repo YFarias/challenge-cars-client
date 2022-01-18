@@ -19,14 +19,17 @@ class AuthService {
     });
   }
 
+  //!Post
   login = async (requestBody) => {
     return this.api.post('/auth/login', requestBody);
   }
 
+  //!Post
   signup = async (requestBody) => {
     return this.api.post('/auth/signup', requestBody);
   }
 
+  //!Get
   verify = async () => {
     return this.api.get('/auth/verify');
   }
